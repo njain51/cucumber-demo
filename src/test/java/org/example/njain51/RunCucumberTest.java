@@ -10,7 +10,8 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = {"classpath:features/BeerCans.feature"},
+        features = {"src/test/resources/features/BeerCans.feature",
+                   "src/test/resources/features/multiplication.feature"},
         glue = {"org.example.njain51.steps"})
 public class RunCucumberTest {
 }
