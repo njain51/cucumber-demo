@@ -17,7 +17,7 @@ public class LoginStepDef {
         System.out.println("User is on netbanking page");
     }
 
-    @And("he login with username {string} and password {string}")
+   @And("he login with username {string} and password {string}")
     public void heLoginWithUsernameAndPassword(String arg0, String arg1) {
         System.out.println("User login with username " + arg0+ "and password " +arg1 );
 
@@ -28,8 +28,10 @@ public class LoginStepDef {
         System.out.println("Home page is populated");
     }
 
-    @And("Credit Card info is displayed")
-    public void creditCardInfoIsDisplayed() {
-        System.out.println("Credit Card info is displayed");
+    @And("Credit Card info displayed is {string}")
+    public void creditCardInfoDisplayedIs(String arg0) {
+        System.out.println("Credit Card info displayed is "+arg0);
     }
+
+
 }
