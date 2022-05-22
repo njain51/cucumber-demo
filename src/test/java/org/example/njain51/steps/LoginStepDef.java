@@ -1,8 +1,4 @@
-package org.example.njain51.steps; /**
- * @author : Nitin Jain
- * @mailto : official.nitinjain@gmail.com
- * @created : 5/22/2022, Sunday
- **/
+package org.example.njain51.steps;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -19,7 +15,7 @@ public class LoginStepDef {
 
    @And("he login with username {string} and password {string}")
     public void heLoginWithUsernameAndPassword(String arg0, String arg1) {
-        System.out.println("User login with username " + arg0+ "and password " +arg1 );
+        System.out.println("User login with username " +arg0+ "and password " +arg1 );
 
     }
 
